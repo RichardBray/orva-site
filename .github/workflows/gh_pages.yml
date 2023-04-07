@@ -9,8 +9,6 @@ jobs:
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.TOKEN }}
 
       - name: 🔧 Install and Build
         run: |
@@ -22,3 +20,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
+          token: ${{ secrets.TOKEN }}
