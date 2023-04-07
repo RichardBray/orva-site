@@ -9,14 +9,16 @@ jobs:
     steps:
       - name: 🛎️ Checkout
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.TOKEN }}
 
       - name: 🔧 Install and Build
         run: |
-          npm i
+          npm ci
           npm run build
 
       - name: 🚀 Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./dist
+          folder: dist
