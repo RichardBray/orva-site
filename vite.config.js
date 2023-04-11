@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/orva-site/',
+  base: 'https://orva.studio/',
   server: {
     port: 3000,
   }

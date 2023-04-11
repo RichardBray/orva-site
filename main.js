@@ -18,3 +18,12 @@ animate(
   { opacity: 1, y:-10 },
   { delay: 1.3, duration: 1 }
 );
+
+const cta = document.querySelector(".home__cta");
+cta.style.opacity = 0;
+
+animate(
+  cta,
+  { opacity: 1, y:-10 },
+  { delay: 3.5, duration: 1 }
+);
