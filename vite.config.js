@@ -4,6 +4,6 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   base: 'https://orva.studio/',
   server: {
-    port: 3000,
+    port: 5000,
   }
 });

@@ -25,5 +25,5 @@ cta.style.opacity = 0;
 animate(
   cta,
   { opacity: 1, y:-10 },
-  { delay: 3.5, duration: 1 }
+  { delay: 3.0, duration: 1 }
 );
